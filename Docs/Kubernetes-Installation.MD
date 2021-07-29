@@ -76,6 +76,7 @@ yum update
 ##### Install Kubernetes
 ```sh
 yum install -y kubeadm-1.15.6-0.x86_64 kubelet-1.15.6-0.x86_64 kubectl-1.15.6-0.x86_64
+yum install kubeadm.x86_64 kubectl.x86_64 kubelet.x86_64 -y 
 ```
 ##### Enable and Start kubelet service
 ```sh
