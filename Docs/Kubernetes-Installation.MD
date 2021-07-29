@@ -72,6 +72,37 @@ EOF
 ```
 ##### yum update
 yum update
+yum repoinfo kubernetes  list
+Failed to set locale, defaulting to C
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Repo-id      : kubernetes
+Repo-name    : Kubernetes
+Repo-status  : enabled
+Repo-revision: 1626395017604613
+Repo-updated : Thu Jun  3 11:03:33 51540376
+Repo-pkgs    : 687
+Repo-size    : 8.8 G
+Repo-baseurl : https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+Repo-expire  : 21600 second(s) (last: Thu Jul 29 15:53:03 2021)
+  Filter     : read-only:present
+Repo-filename: /etc/yum.repos.d/kubernetes.repo
+
+repolist: 687
+[root@ip-172-31-74-146 ec2-user]# yum repo-pakgs kubernetes list
+Failed to set locale, defaulting to C
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No such command: repo-pakgs. Please use /bin/yum --help
+[root@ip-172-31-74-146 ec2-user]# yum repo-pkgs kubernetes list
+Failed to set locale, defaulting to C
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+cri-tools.x86_64                                                                                  1.13.0-0                                                                             kubernetes
+kubeadm.x86_64                                                                                    1.21.3-0                                                                             kubernetes
+kubectl.x86_64                                                                                    1.21.3-0                                                                             kubernetes
+kubelet.x86_64                                                                                    1.21.3-0                                                                             kubernetes
+kubernetes-cni.x86_64                                                                             0.8.7-0                                                                              kubernetes
+rkt.x86_64                                                                                        1.27.0-1                                                                             kubernetes
+[root@ip-172-31-74-146 ec2-user]# 
 
 ##### Install Kubernetes
 ```sh
