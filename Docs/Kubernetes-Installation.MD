@@ -148,8 +148,12 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ## On kmaster
 ##### Initialize Kubernetes Cluster
 ```sh
+#### do ifconfig or ip address to get the ip-address " MasterServerIP" the pod pod-network-cidr adddress can be any address but is used in 
+#### Calico network yaml for all pods that are started
 kubeadm init --apiserver-advertise-address=<MasterServerIP> --pod-network-cidr=192.168.0.0/16
+
 ```
+
 ##### Copy kube config
 To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.
 
@@ -162,6 +166,8 @@ chown -R praveen:praveen /home/praveen/.kube
 ##### Deploy Calico network
 This has to be done as the user in the above step (in my case it is __praveen__)
 ```sh
+### Add the pod-network-cidr adddress that you have set in the calicio.yaml file
+
 kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 ```
 
