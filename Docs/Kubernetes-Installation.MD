@@ -164,7 +164,7 @@ useradd vincebailey
 
 mkdir /home/vincebailey/.kube
 cp /etc/kubernetes/admin.conf /home/vincebailey/.kube/config
-chown -R praveen:praveen /home/vincebailey/.kube
+chown -R vincebailey:vincebailey /home/vincebailey/.kube
 ```
 ##### Deploy Calico network
 This has to be done as the user in the above step (in my case it is __praveen__)
