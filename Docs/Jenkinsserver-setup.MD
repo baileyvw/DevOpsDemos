@@ -16,6 +16,11 @@ source ~/.bash_profile
 ## Install git
 yum install git
 
+## install maven
+```
+yum install maven 
+/usr/share/mvn
+```
 
 ## Install Docker
 ```sh
