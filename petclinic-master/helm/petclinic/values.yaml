@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: vincebailey/petclinic2
+  repository: vincebailey/petclinic2image
   tag: 10
   pullPolicy: IfNotPresent
 
