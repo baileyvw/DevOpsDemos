@@ -12,7 +12,8 @@ pipeline {
                         sh 'cp -R petclinic-master/helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/docker pull vincebailey/petclinic2--set image.tag=10'
+		        sh 'helm install -n default -name petclinic-app petclinic --set image.repository=registry.hub.docker.com/docker pull vincebailey/petclinic2 --set image.tag=10 --dry-run --debug'
+                        /* sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/docker pull vincebailey/petclinic2--set image.tag=10' */
               			
             }           
         }
