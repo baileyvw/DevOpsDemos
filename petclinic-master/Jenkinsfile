@@ -21,7 +21,7 @@ pipeline {
 		        sh ' kubectl create namespace ame '
 		        sh ' kubectl get namespace --show-labels'
 		        sh ' echo "Doing deployment" '
-		        sh 'helm install -n default -name petclinic-app petclinic --set image.repository=registry.hub.docker.com/vincebailey/petclinic2 --set image.tag=10'
+		        /* sh 'helm install -n default -name petclinic-app petclinic --set image.repository=registry.hub.docker.com/vincebailey/petclinic2 --set image.tag=10' */
                         /* sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/docker pull vincebailey/petclinic2--set image.tag=10' */
               			
             }           
