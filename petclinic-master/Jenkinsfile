@@ -5,7 +5,7 @@ pipeline {
             steps {           
                         sh 'pwd'
 		        sh 'echo `pwd`'
-		        sh 'cd petclinic-master'
+		        sh 'cd `petclinic-master`'
 		        sh 'echo `pwd`'
 		        sh 'ls -ltr'
 		        sh 'echo `pwd`'
