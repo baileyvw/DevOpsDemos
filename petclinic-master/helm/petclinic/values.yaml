@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: prawinkorvi/petclinicimage
-  tag: 5
+  repository: docker pull vincebailey/petclinic2
+  tag: 10
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
