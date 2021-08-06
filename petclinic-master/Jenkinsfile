@@ -5,11 +5,11 @@ pipeline {
             steps {           
                         sh 'pwd'
 		        sh 'echo `pwd`'
-		        sh 'cd `petclinic-master`'
+		        sh 'cd petclinic-master'
 		        sh 'echo `pwd`'
 		        sh 'ls -ltr'
 		        sh 'echo `pwd`'
-                        sh 'cp -R helm/* .'
+                        sh 'cp -R petclinic-master/helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
                         sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/docker pull vincebailey/petclinic2--set image.tag=10'
