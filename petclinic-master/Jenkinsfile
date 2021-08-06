@@ -6,6 +6,7 @@ pipeline {
                         sh 'pwd'
 		        sh 'echo `pwd`'
 		        sh 'cd petclinic-master'
+		        sh 'ls -ltr'
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
